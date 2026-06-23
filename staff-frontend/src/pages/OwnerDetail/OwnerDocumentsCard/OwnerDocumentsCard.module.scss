@@ -1,0 +1,135 @@
+.documentsList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.documentCard {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.documentCard:hover {
+    background-color: #f9f9f9;
+    border-color: #d9d9d9;
+}
+
+.documentIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-right: 16px;
+    font-size: 24px;
+}
+
+.documentInfo {
+    flex: 1;
+}
+
+.documentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.documentType {
+    font-size: 16px;
+    font-weight: 600;
+    color: #262626;
+    margin: 0;
+}
+
+.documentStatus {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.statusActive {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+
+.statusExpired {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+
+.statusPending {
+    background-color: #fff7e6;
+    color: #fa8c16;
+}
+
+.documentNumber {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.documentDates {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.documentDate {
+    font-size: 14px;
+}
+
+.documentIssuer {
+    font-size: 14px;
+    color: #595959;
+}
+
+.documentLabel {
+    color: #8c8c8c;
+}
+
+.expiryValue {
+    font-weight: 500;
+}
+
+.daysRemaining {
+    margin-left: 4px;
+    font-size: 13px;
+    color: #52c41a;
+}
+
+.expired {
+    color: #f5222d;
+}
+
+@media (max-width: 640px) {
+    .documentCard {
+        flex-direction: column;
+    }
+
+    .documentIcon {
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .documentHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .documentStatus {
+        align-self: flex-start;
+    }
+
+    .documentDates {
+        flex-direction: column;
+        gap: 8px;
+    }
+}

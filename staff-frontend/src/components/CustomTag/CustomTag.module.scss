@@ -1,0 +1,17 @@
+.customTag {
+    height: 32px;              
+    line-height: 30px;        
+    font-size: 14px;
+    padding: 0 12px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 6px;
+
+    font-family: 'Montserrat', sans-serif;
+
+    span {
+        margin-inline-start: 8px !important;
+        font-size: 12px !important;
+        margin-left: 8px;
+    }
+}

@@ -1,0 +1,15 @@
+.container {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.container:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

@@ -1,0 +1,93 @@
+.inputWrapper {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  transition: all 0.2s;
+  background-color: #fff;
+  position: relative;
+}
+
+/* Sizes */
+.small {
+  height: 24px;
+}
+
+.middle {
+  height: 36px;
+}
+
+.large {
+  height: 48px;
+}
+
+/* States */
+.focused {
+  border-color: #4096ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.error {
+  border-color: #ff4d4f;
+}
+
+.error.focused {
+  box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2);
+}
+
+.disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.block {
+  width: 100%;
+}
+
+/* Input */
+.input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0 12px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.88);
+  height: 100%;
+  width: 100%;
+}
+
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+/* Prefix & Suffix */
+.prefix {
+  display: flex;
+  align-items: center;
+  padding-left: 12px;
+  padding-right: 8px; /* Thêm khoảng cách bên phải */
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.suffix {
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  padding-left: 8px; /* Thêm khoảng cách bên trái */
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.inputWrapper:has(.prefix) .input {
+  padding-left: 4px; /* Thêm một chút padding để tạo khoảng cách */
+}
+
+.inputWrapper:has(.suffix) .input {
+  padding-right: 4px; /* Thêm một chút padding để tạo khoảng cách */
+}

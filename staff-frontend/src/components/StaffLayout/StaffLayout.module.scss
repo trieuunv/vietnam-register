@@ -1,0 +1,17 @@
+.staffLayout {
+    display: flex;
+    min-height: 100vh;
+}
+
+.mainContent {
+    flex: 1;
+    margin-left: 280px;
+
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+}
+
+.main {
+    padding: 1.5rem;
+}

@@ -1,0 +1,180 @@
+.resultsList {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.criteriaGroup {
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.criteriaHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.criteriaName {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0;
+    color: #262626;
+}
+
+.criteriaStats {
+    display: flex;
+    gap: 12px;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 14px;
+    color: #595959;
+}
+
+.passedDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #52c41a;
+}
+
+.failedDot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ff4d4f;
+}
+
+.resultItems {
+    display: flex;
+    flex-direction: column;
+}
+
+.resultItem {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.resultItem:last-child {
+    border-bottom: none;
+}
+
+.resultHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resultId {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.resultActions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.resultButton {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    background-color: white;
+    transition: all 0.2s;
+}
+
+.resultButton:hover {
+    border-color: #1890ff;
+    color: #1890ff;
+}
+
+.activePass {
+    background-color: #f6ffed;
+    border-color: #b7eb8f;
+    color: #52c41a;
+}
+
+.activeFail {
+    background-color: #fff1f0;
+    border-color: #ffa39e;
+    color: #ff4d4f;
+}
+
+.notesSection {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.notesInput {
+    width: 100%;
+    min-height: 80px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    font-size: 14px;
+    resize: vertical;
+}
+
+.notesActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.resultBadge {
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.passedBadge {
+    background-color: #f6ffed;
+    color: #52c41a;
+    border: 1px solid #b7eb8f;
+}
+
+.failedBadge {
+    background-color: #fff1f0;
+    color: #ff4d4f;
+    border: 1px solid #ffa39e;
+}
+
+.notesPreview {
+    margin-top: 12px;
+    font-size: 14px;
+    color: #595959;
+    padding: 12px 16px;
+    background-color: #f9fbfd;
+    border-radius: 4px;
+    border-left: 4px solid #91d5ff;
+    line-height: 1.6;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.notesLabel {
+    font-weight: 600;
+    color: #1890ff;
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    letter-spacing: 0.3px;
+}
+
+.notesContent {
+    white-space: pre-line;
+}

@@ -1,0 +1,125 @@
+.statisticsContent {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.summarySection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.summaryItem {
+    flex: 1;
+    min-width: 150px;
+    padding: 16px;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
+
+.summaryValue {
+    font-size: 20px;
+    font-weight: 500;
+    color: #262626;
+    margin-bottom: 8px;
+}
+
+.summaryLabel {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.progressSection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.progressTitle {
+    font-size: 16px;
+    font-weight: 500;
+    color: #262626;
+}
+
+.progressBar {
+    height: 24px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+    display: flex;
+}
+
+.progressPassed {
+    height: 100%;
+    background-color: #52c41a;
+}
+
+.progressConditional {
+    height: 100%;
+    background-color: #faad14;
+}
+
+.progressFailed {
+    height: 100%;
+    background-color: #ff4d4f;
+}
+
+.progressStats {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.statItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #595959;
+}
+
+.passedDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #52c41a;
+}
+
+.conditionalDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #faad14;
+}
+
+.failedDot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ff4d4f;
+}
+
+.expired {
+    color: #ff4d4f;
+}
+
+.warning {
+    color: #faad14;
+}
+
+.valid {
+    color: #52c41a;
+}
+
+@media (max-width: 640px) {
+    .summarySection {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .summaryItem {
+        width: 100%;
+    }
+}

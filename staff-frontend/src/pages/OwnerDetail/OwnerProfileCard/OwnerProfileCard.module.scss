@@ -1,0 +1,57 @@
+.profileHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.avatarContainer {
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #1890ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.nameContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.fullName {
+    font-size: 24px;
+    font-weight: 600;
+    color: #262626;
+    margin: 0 0 8px 0;
+}
+
+.registrationInfo {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.profileDetails {
+    border-top: 1px solid #f0f0f0;
+    padding-top: 20px;
+}
+
+@media (max-width: 640px) {
+    .profileHeader {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .avatarContainer {
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+}

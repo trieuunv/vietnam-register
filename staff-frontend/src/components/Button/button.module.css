@@ -1,0 +1,161 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Sizes */
+.small {
+  height: 24px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+.middle {
+  height: 36px;
+  padding: 0 16px;
+  font-size: 14px;
+}
+
+.large {
+  height: 48px;
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/* Variants */
+.primary {
+  color: #fff;
+  background-color: #1677ff;
+  border-color: #1677ff;
+}
+
+.primary.hovered {
+  background-color: #4096ff;
+  border-color: #4096ff;
+}
+
+.primary.active {
+  background-color: #0958d9;
+  border-color: #0958d9;
+}
+
+.secondary {
+  color: rgba(0, 0, 0, 0.88);
+  background-color: #ffffff;
+  border-color: #d9d9d9;
+}
+
+.secondary.hovered {
+  color: #4096ff;
+  border-color: #4096ff;
+}
+
+.secondary.active {
+  color: #0958d9;
+  border-color: #0958d9;
+}
+
+.danger {
+  color: #fff;
+  background-color: #ff4d4f;
+  border-color: #ff4d4f;
+}
+
+.danger.hovered {
+  background-color: #ff7875;
+  border-color: #ff7875;
+}
+
+.danger.active {
+  background-color: #d9363e;
+  border-color: #d9363e;
+}
+
+.success {
+  color: #fff;
+  background-color: #52c41a;
+  border-color: #52c41a;
+}
+
+.success.hovered {
+  background-color: #73d13d;
+  border-color: #73d13d;
+}
+
+.success.active {
+  background-color: #389e0d;
+  border-color: #389e0d;
+}
+
+.warning {
+  color: #fff;
+  background-color: #faad14;
+  border-color: #faad14;
+}
+
+.warning.hovered {
+  background-color: #ffc53d;
+  border-color: #ffc53d;
+}
+
+.warning.active {
+  background-color: #d48806;
+  border-color: #d48806;
+}
+
+/* States */
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+.primary.disabled {
+  color: #fff;
+  background-color: #1677ff;
+  border-color: #1677ff;
+}
+
+.secondary.disabled {
+  color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.04);
+  border-color: #d9d9d9;
+}
+
+/* Block */
+.block {
+  width: 100%;
+}
+
+/* Loading */
+.loadingIcon {
+  margin-right: 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingText {
+  opacity: 0.8;
+}

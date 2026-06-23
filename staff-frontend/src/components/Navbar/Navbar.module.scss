@@ -1,0 +1,41 @@
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+    font-size: 14px;
+}
+
+.leftNavigation {
+    display: flex;
+    align-items: center;
+
+    .tabNavigation {
+        margin-left: 20px;
+    }
+}
+
+.rightNavigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    .navElement {
+        margin-right: 15px;
+        display: flex;
+
+        button {
+            background: none;
+            border: none;
+        }
+    }
+}
+
+.logo {
+    margin-right: 25px;
+
+    img {
+        width: 100px;
+    }
+}

@@ -1,0 +1,204 @@
+.searchContainer {
+    margin-bottom: 16px;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.searchInput:focus {
+    border-color: #40a9ff;
+    box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+    outline: none;
+}
+
+.vehiclesList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.vehicleCard {
+    display: flex;
+    padding: 16px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.vehicleCard:hover {
+    background-color: #f9f9f9;
+    border-color: #d9d9d9;
+}
+
+.vehicleIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    margin-right: 16px;
+    font-size: 24px;
+    color: #1890ff;
+}
+
+.vehicleInfo {
+    flex: 1;
+}
+
+.vehicleHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.vehicleNumber {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1890ff;
+    margin: 0;
+}
+
+.vehicleStatus {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.statusActive {
+    background-color: #f6ffed;
+    color: #52c41a;
+}
+
+.statusPending {
+    background-color: #fff7e6;
+    color: #fa8c16;
+}
+
+.statusExpired {
+    background-color: #fff1f0;
+    color: #f5222d;
+}
+
+.vehicleDetails {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.vehicleModel {
+    font-size: 14px;
+    color: #262626;
+}
+
+.vehicleType {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.inspectionInfo {
+    font-size: 13px;
+}
+
+.expiryDate {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    color: #8c8c8c;
+}
+
+.expiryLabel {
+    color: #8c8c8c;
+}
+
+.expiryValue {
+    font-weight: 500;
+    color: #262626;
+}
+
+.daysRemaining {
+    color: #52c41a;
+}
+
+.expired {
+    color: #f5222d;
+}
+
+.noInspection {
+    font-style: italic;
+    color: #8c8c8c;
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    color: #8c8c8c;
+}
+
+.emptyIcon {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+.emptyText {
+    font-size: 14px;
+}
+
+.addButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    // padding: 4px 12px;
+    padding: 6px 12px;
+    background-color: #1890ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: solid 1px #1890ff;
+}
+
+.addButton:hover {
+    background-color: #40a9ff;
+}
+
+.plusIcon {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .vehicleCard {
+        flex-direction: column;
+    }
+
+    .vehicleIcon {
+        margin-right: 0;
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    .vehicleHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .vehicleStatus {
+        align-self: flex-start;
+    }
+}

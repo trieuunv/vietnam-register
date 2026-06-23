@@ -1,0 +1,105 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: white;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
+
+.statusSection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.statusLabel {
+    font-size: 14px;
+    color: #8c8c8c;
+}
+
+.actionSection {
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.primary {
+    background-color: #1890ff;
+    color: white;
+}
+
+.primary:hover:not(:disabled) {
+    background-color: #40a9ff;
+}
+
+.danger {
+    background-color: #ff4d4f;
+    color: white;
+}
+
+.danger:hover:not(:disabled) {
+    background-color: #ff7875;
+}
+
+.success {
+    background-color: #52c41a;
+    color: white;
+}
+
+.success:hover:not(:disabled) {
+    background-color: #73d13d;
+}
+
+.warning {
+    background-color: #faad14;
+    color: white;
+}
+
+.warning:hover:not(:disabled) {
+    background-color: #ffc53d;
+}
+
+.default {
+    background-color: #f0f0f0;
+    color: #262626;
+    border: 1px solid #d9d9d9;
+}
+
+.default:hover:not(:disabled) {
+    background-color: #fafafa;
+    border-color: #1890ff;
+    color: #1890ff;
+}
+
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .actionSection {
+        width: 100%;
+        justify-content: flex-end;
+    }
+}
