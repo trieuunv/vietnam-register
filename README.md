@@ -4,7 +4,7 @@ A modern, comprehensive mono-repo solution for motor vehicle inspections and reg
 
 ---
 
-## 🛠️ Technical Stack & Tags
+## Technical Stack & Tags
 
 [![Laravel](https://img.shields.io/badge/Laravel-9.19-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-%5E8.0.2-777BB4?style=for-the-badge&logo=php&logoColor=white)](https://php.net)
@@ -22,7 +22,7 @@ A modern, comprehensive mono-repo solution for motor vehicle inspections and reg
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 vietnam-register/
@@ -33,33 +33,37 @@ vietnam-register/
 
 ---
 
-## ✨ Features
+## Features
 
-### 🏢 1. Registry Staff Web Portal (`staff-frontend`)
-*   **Inspection Dashboard**: Track ongoing, completed, and canceled vehicle inspections at the registry center.
-*   **Evaluation Workflow**: Step-by-step assessment of vehicles against predefined inspection criteria (e.g., brakes, lights, emissions, safety).
-*   **Real-time Logic**: Automatically evaluates inspection results (`Passed`, `Failed`, `Conditional/Warning`) based on criteria checkmarks.
-*   **Notes & Logs**: Allow inspectors to add details, upload remarks, and edit notes on active certificates.
-*   **Billing & Fee Calculation**: Calculates fees in VND, registers receipt numbers, and handles certificate updates.
+### 1. Registry Staff Web Portal (`staff-frontend`)
 
-### 📱 2. Mobile Application (`android-frontend`)
-*   **MVI/MVVM Clean Architecture**: Highly structured presentation, domain, and data layers.
-*   **Offline Support**: Local caching using Room database for robust offline operations.
-*   **Secure Storage**: Credentials and settings encrypted using Jetpack Security Crypto and DataStore Preferences.
-*   **Interactive UI**: Smooth user interface using Jetpack Compose with Material Design 3 and animated navigation bars.
-*   **API Client**: Clean, reactive networking powered by Retrofit, OkHttp, and Kotlinx Serialization.
+- **Inspection Dashboard**: Track ongoing, completed, and canceled vehicle inspections at the registry center.
+- **Evaluation Workflow**: Step-by-step assessment of vehicles against predefined inspection criteria (e.g., brakes, lights, emissions, safety).
+- **Real-time Logic**: Automatically evaluates inspection results (`Passed`, `Failed`, `Conditional/Warning`) based on criteria checkmarks.
+- **Notes & Logs**: Allow inspectors to add details, upload remarks, and edit notes on active certificates.
+- **Billing & Fee Calculation**: Calculates fees in VND, registers receipt numbers, and handles certificate updates.
 
-### ⚙️ 3. RESTful API Backend (`laravel-backend`)
-*   **Authentication**: Secure authentication system utilizing JWT (`tymon/jwt-auth`) and Laravel Sanctum.
-*   **Business Logic**: Flexible service layer design with custom Helpers (e.g., Holiday calculation, files storage helper).
-*   **Data Validation**: Rigid FormRequests for ensuring incoming payloads match requirements.
-*   **Resources**: Structured API responses through Eloquent API Resources.
+### 2. Mobile Application (`android-frontend`)
+
+- **MVI/MVVM Clean Architecture**: Highly structured presentation, domain, and data layers.
+- **Offline Support**: Local caching using Room database for robust offline operations.
+- **Secure Storage**: Credentials and settings encrypted using Jetpack Security Crypto and DataStore Preferences.
+- **Interactive UI**: Smooth user interface using Jetpack Compose with Material Design 3 and animated navigation bars.
+- **API Client**: Clean, reactive networking powered by Retrofit, OkHttp, and Kotlinx Serialization.
+
+### 3. RESTful API Backend (`laravel-backend`)
+
+- **Authentication**: Secure authentication system utilizing JWT (`tymon/jwt-auth`) and Laravel Sanctum.
+- **Business Logic**: Flexible service layer design with custom Helpers (e.g., Holiday calculation, files storage helper).
+- **Data Validation**: Rigid FormRequests for ensuring incoming payloads match requirements.
+- **Resources**: Structured API responses through Eloquent API Resources.
 
 ---
 
-## 📐 Architecture & Contribution Guidelines
+## Architecture & Contribution Guidelines
 
 ### Mobile Client Feature Workflow (`android-frontend`)
+
 To maintain consistency across developers, follow these architectural steps when implementing a new feature in the Android app:
 
 1.  **DTO Definitions**: Create data class requests and responses in the `dto` directory.
@@ -74,18 +78,20 @@ To maintain consistency across developers, follow these architectural steps when
 
 ---
 
-## 🚀 Setup & Installation
+## Setup & Installation
 
-### 📋 Prerequisites
+### Prerequisites
+
 Ensure you have the following installed on your machine:
-*   [PHP >= 8.0.2](https://www.php.net/) & [Composer](https://getcomposer.org/)
-*   [Node.js >= 18.0](https://nodejs.org/) & [NPM](https://www.npmjs.com/)
-*   [Android Studio](https://developer.android.com/studio) (Ladybug or newer)
-*   MySQL or any compatible SQL Database engine
+
+- [PHP >= 8.0.2](https://www.php.net/) & [Composer](https://getcomposer.org/)
+- [Node.js >= 18.0](https://nodejs.org/) & [NPM](https://www.npmjs.com/)
+- [Android Studio](https://developer.android.com/studio) (Ladybug or newer)
+- MySQL or any compatible SQL Database engine
 
 ---
 
-### 🌐 Backend Configuration (`laravel-backend`)
+### Backend Configuration (`laravel-backend`)
 
 1.  Navigate to the backend directory:
     ```bash
@@ -115,7 +121,7 @@ Ensure you have the following installed on your machine:
 
 ---
 
-### 🖥️ Staff Portal Configuration (`staff-frontend`)
+### Staff Portal Configuration (`staff-frontend`)
 
 1.  Navigate to the web portal directory:
     ```bash
@@ -133,7 +139,7 @@ Ensure you have the following installed on your machine:
 
 ---
 
-### 🤖 Android App Configuration (`android-frontend`)
+### Android App Configuration (`android-frontend`)
 
 1.  Open the project in Android Studio.
 2.  Wait for Gradle to sync dependencies automatically.
@@ -143,6 +149,6 @@ Ensure you have the following installed on your machine:
 
 ---
 
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
